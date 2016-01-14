@@ -8,7 +8,7 @@
 
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Programming Terms Wiki</title>
+    <title>CSS: Programming Terms Wiki</title>
   </head>
 
   <body>
@@ -29,20 +29,34 @@
         <!--main term information-->
         <div class="col-sm-10">
           <div class="keycontent">
-            <h1 class="term"> term</h1>
+            <h1 class="term"> CSS</h1>
             <h2>Definition</h2>
-              <p>This is where term content would go.
+              <p>CSS (Cascading Style Sheets) are    that are used to apply styles across multiple pages of a website. They allow you to make changes to style in one place that affect multiple pages.
 
               </p>
               <h2>Code example</h2>
-              <p>
+              <p>This code written in our .css file makes anything with the class "happy" have yellow text with a black background or anything with an id of "sad" have blue text.
+                <xmp>
+                  .happy{
+                    color: yellow;
+                    background-color: black;
+                  }
+
+                  #sad {
+                    color: blue;
+                  }
+                </xmp>
               </p>
               <code>
 
               </code>
             <h2>See it in Action?</h2>
+            <div class="happy">
+              <h3>Everything in this div is happy</h3>
+              <p> Except, this span makes this <span id="sad">word</span> be "sad"</p>
+            </div>
               <p>
-                (a functional example here)
+                See the page for <a href="divspan.html">Div and Span</a> to see how the class and id were applied.
               </p>
           </div>
         </div>

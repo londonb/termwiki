@@ -10,3 +10,20 @@
 .keycontent{
   background-color: #F8f8f8;
 }
+
+.happy{
+  color: yellow;
+  background-color: black;
+}
+
+#sad {
+  color: blue;
+}
+
+#story{
+  display: none;
+}
+
+#blanks{
+  width: 50%
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Forms:Programming Terms Wiki</title>
+  </head>
+
+  <body>
+
+     <div class="main">
+       <div class="jumbotron">
+       </div>
+      <div class="container">
+      <div class="row">
+        <!--sidebar stuff-->
+        <div class="col-sm-2">
+          <div class="sidebar">
+            <h2>Jump to a Term</h2>
+            <ul class="sidebarMenu">
+            </ul>
+          </div>
+        </div>
+        <!--main term information-->
+        <div class="col-sm-10">
+          <div class="keycontent">
+            <h1 class="term">Forms</h1>
+            <h2>Definition</h2>
+              <p>This allows a visitor to your website to submit information athat Javascript can interpret.
+
+              </p>
+              <h2>Code example</h2>
+              <xmp>
+                <div class="container">
+                  <h1>Submit some information</h1>
+
+                  <div class="container" id="blanks">
+
+                      <form>
+                        <div class="form-group">
+
+                          <label for="yourName">What is your Name? </label>
+                          <input id="yourName" class="form-control" type="text" placeholder="Write a name here">
+
+                        </div>
+
+                        <div class="form-group">
+
+                          <label for="yourQuest">What is your Quest?</label>
+                          <input id="yourQuest" class="form-control" type="text" placeholder="Write some words here">
+
+                        </div>
+
+                        <div class="form-group">
+
+                          <label for="favColor">What is your favorite Color?</label>
+                          <input id="favColor" class="form-control" type="color">
+
+                        </div>
+
+                        <button type="submit" class="btn">Submit!!!</button>
+
+                      </form>
+                    </div>
+                  </xmp>
+                  <code>
+                      $("#blanks form").submit(function(event){
+                    var nameInput = $("input#yourName").val();
+                    var questInput = $("input#yourQuest").val();
+                    var colorInput = $("input#favColor").val();
+
+                    $(".yourName").text(nameInput);
+                    $(".yourQuest").text(questInput);
+                    $("#colorized").css('color', colorInput);
+
+                    $("#story").show();
+
+                    event.preventDefault();
+                });
+                </code>
+            <h2>See it in Action?</h2>
+            <div class="container">
+              <h1>Submit some information</h1>
+
+              <div class="container" id="blanks">
+
+                  <form>
+                    <div class="form-group">
+
+                      <label for="yourName">What is your Name? </label>
+                      <input id="yourName" class="form-control" type="text" placeholder="Write a name here">
+
+                    </div>
+
+                    <div class="form-group">
+
+                      <label for="yourQuest">What is your Quest?</label>
+                      <input id="yourQuest" class="form-control" type="text" placeholder="Write some words here">
+
+                    </div>
+
+                    <div class="form-group">
+
+                      <label for="favColor">What is your favorite Color?</label>
+                      <input id="favColor" class="form-control" type="color">
+
+                    </div>
+
+                    <button type="submit" class="btn">Submit!!!</button>
+
+                  </form>
+                </div>
+                <div id="story">
+                <p>  <span id="colorized">Good luck with <span class="yourQuest"></span> , <span class="yourName"></span> !</span></p>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
