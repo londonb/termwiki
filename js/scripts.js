@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  var terms = ["default" , "index", "array", "divspan", "css", "javascript-variables", "javascript-arithmetic", "javascript-methods", "forms"];
+  $("#jumbo").text('Welcome to the Programming Terms Wiki');
+  var terms = ["index", "array", "divspan", "css", "javascript-variables", "javascript-arithmetic", "javascript-methods", "forms"];
       terms.forEach(function(term) {
         $("ul.sidebarMenu").append('<li>'+ '<a href=' + '"'+ term + '.html">' + term + '</a></li>');
 
